@@ -11,6 +11,9 @@ branches:
 
 deploy:
   provider: azure_web_apps
+  username: amira_noaman       # If AZURE_WA_USERNAME isn't set
+  password: passwordamira@1   # If AZURE_WA_PASSWORD isn't set
+  site: test-web-eus-vm1    # If AZURE_WA_SITE isn't set
   verbose: true
 
 notifications:
