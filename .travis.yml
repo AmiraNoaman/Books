@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - 8.17.0
+
+before_install:
+  - npm i -g npm@6.13.4
+
+branches:
+  only:
+  - master
+
+deploy:
+  provider: azure_web_apps
+  verbose: true
+
+notifications:
+  email:
+    recipients:
+      - amira.noaman21@gmail.com
+    on_success: always # default: change
+    on_failure: always # default: always
+
+dist: bionic
+
