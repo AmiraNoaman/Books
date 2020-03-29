@@ -17,7 +17,7 @@ var routes = function(app) {
         book.save(function(err, result) {
             if ( err ) throw err;
             res.json( {
-                message:"Successfully added book hopalilaaaaa",
+                message:"Successfully added book",
                 book:result
             });
         });
