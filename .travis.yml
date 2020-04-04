@@ -10,8 +10,8 @@ branches:
   only:
   - master
 
-before_deploy: 
-  -npm install
+script:
+  - npm run test
 
 deploy:
   provider: azure_web_apps
