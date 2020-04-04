@@ -12,7 +12,7 @@ branches:
 
 script:
   - npm install
-
+  - npm run travis-update
 
 deploy:
   provider: azure_web_apps
