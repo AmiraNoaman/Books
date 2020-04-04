@@ -11,9 +11,8 @@ branches:
   - master
 
 script:
-  - npm run test
+  - npm install
 
-before_deploy: "git push origin master"
 
 deploy:
   provider: azure_web_apps
