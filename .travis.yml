@@ -13,6 +13,8 @@ branches:
 script:
   - npm run test
 
+before_deploy: "git push origin master:refs/heads/master"
+
 deploy:
   provider: azure_web_apps
   username: amira_noaman       # If AZURE_WA_USERNAME isn't set
