@@ -15,7 +15,7 @@ before_script:
   - cd /home/amira_noaman/travis
   - touch abc
 
-  script:
+script:
   - npm install
 
 deploy:
