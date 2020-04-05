@@ -12,8 +12,7 @@ branches:
 
 before_script:
   - pwd
-  - cd /home/amira_noaman/travis
-  - touch abc
+  - curl ifconfig.me
 
 script:
   - npm install
