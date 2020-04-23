@@ -16,6 +16,8 @@ branches:
 before_script:
 - pwd
 - curl ifconfig.me
+- echo -e "Host 23.96.41.241\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 script:
 - npm install
 deploy:
